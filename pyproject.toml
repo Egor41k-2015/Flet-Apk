@@ -1,0 +1,22 @@
+[project]
+name = "package-viewer"
+version = "1.0.0"
+description = "Просмотр установленных пакетов Android"
+requires-python = ">=3.10"
+dependencies = [
+    "flet>=1.0.4",
+]
+
+[tool.flet]
+org = "com.egor.packageviewer"
+product = "Пакеты Android"
+company = "Egor"
+
+[tool.flet.app]
+path = "."
+
+[[tool.flet.android.permission]]
+name = "android.permission.QUERY_ALL_PACKAGES"
+
+[[tool.flet.android.permission]]
+name = "android.permission.INTERNET"
