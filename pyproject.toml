@@ -15,8 +15,6 @@ company = "Egor"
 [tool.flet.app]
 path = "."
 
-[[tool.flet.android.permission]]
-name = "android.permission.QUERY_ALL_PACKAGES"
-
-[[tool.flet.android.permission]]
-name = "android.permission.INTERNET"
+[tool.flet.android.permission]
+"android.permission.QUERY_ALL_PACKAGES" = true
+"android.permission.INTERNET" = true
