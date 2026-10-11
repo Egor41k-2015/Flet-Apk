@@ -82,7 +82,7 @@ jobs:
 
       - name: Build APK (all architectures)
         run: |
-          flet build apk --python-version 3.12 --split-per-abi --verbose --no-rich-output
+         yes | flet build apk --python-version 3.12 --split-per-abi --verbose --no-rich-output
 
       - name: Collect APK files
         run: |
