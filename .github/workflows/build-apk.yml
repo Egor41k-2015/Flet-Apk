@@ -40,7 +40,7 @@ jobs:
 
       - name: Build APK
         run: |
-          flet build apk --python-version 3.13 --split-per-abi
+          yes | flet build apk --python-version 3.13 --split-per-abi
 
       - name: Upload APK artifacts
         uses: actions/upload-artifact@v4
